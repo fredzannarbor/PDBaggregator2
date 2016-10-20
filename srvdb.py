@@ -109,3 +109,7 @@ class SrvDb(object):
 
             self.cursor.execute("DELETE FROM nodes WHERE ip = ?", (ip))
             self.conn.commit()
+
+#   def function that selects nodes that offer particular data sets
+
+

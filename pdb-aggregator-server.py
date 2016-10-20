@@ -36,16 +36,7 @@ payment = Payment(app, wallet)
 logger = logging.getLogger('werkzeug')
 
 # db handle
-db = srvdb.SrvDb("./ping-aggregator.db")
-
-
-@app.route('/manifest')
-def manifest():
-    """Provide the app manifest to the 21 crawler.
-    """
-    with open('./manifest.yaml', 'r') as f:
-        manifest = yaml.load(f)
-    return json.dumps(manifest)
+db = srvdb.SrvDb("./pdb-aggregator.db")
 
 
 def get_payment_amt(request):
