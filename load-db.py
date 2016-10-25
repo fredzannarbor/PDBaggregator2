@@ -1,6 +1,6 @@
 import srvdb
 
-db = srvdb.SrvDb("./ping-aggregator.db")
+db = srvdb.SrvDb("./pdb-aggregator.db")
 
 with open("./saved_ips.txt") as f:
     content = f.read().splitlines()

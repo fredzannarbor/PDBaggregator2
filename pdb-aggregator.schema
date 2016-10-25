@@ -1,6 +1,12 @@
+BEGIN TRANSACTION;
+CREATE TABLE `routes` (
+	`ip`	TEXT,
+	`route`	TEXT
+);
 CREATE TABLE nodes (
 	ip		TEXT PRIMARY KEY,
   up		INTEGER,
   price	INTEGER,
   url		TEXT
 );
+COMMIT;

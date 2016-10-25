@@ -14,8 +14,8 @@ info:
   x-21-usage: 'Buy personal data from participants in the network..'
   x-21-quick-buy: "$ 21 buy AUTO:5018 --data '{\"nodes\": "all", \"data set name\": \"interests\"}'"
   x-21-category: utilities
-  x-21-github-profile-url: https://github.com/pooleja
-  x-21-github-project-url: https://github.com/pooleja/Ping21AggregatorE16
+  x-21-github-profile-url: https://github.com/fredzannarbor
+  x-21-github-project-url: https://github.com/fredzannarbor/pdb-aggregator
   x-21-keywords: [marketing, advertising, revenue, sales]
   x-21-total-price:
      min: 1000

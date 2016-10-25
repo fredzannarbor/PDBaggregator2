@@ -7,4 +7,4 @@ then
 	echo Database $FN already exists.  Will not overwrite
 	exit 1
 fi
-sqlite3 $FN < ping-aggregator.schema
+sqlite3 $FN < pdb-aggregator.schema
