@@ -110,6 +110,16 @@ class SrvDb(object):
             self.cursor.execute("DELETE FROM nodes WHERE ip = ?", (ip))
             self.conn.commit()
 
-#   def function that selects nodes that offer particular data sets
+#   routes supported by each ip
 
+#     def register(self, ip, route):
+        """
+        Add a route to the DB.
+        """
+        with db_rlock:
 
+            # Add hash metadata to db
+            self.cursor.execute("INSERT INTO routes VALUES(?, ?, ? )", (ip, route))
+            self.conn.commit()
+
+            return True
