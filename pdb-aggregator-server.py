@@ -216,6 +216,6 @@ if __name__ == '__main__':
             cleaner.start()
 
             print("Server running...")
-            app.run(host='0.0.0.0', port=7018)
+            app.run(host='0.0.0.0', port=5019)
 
     run()
