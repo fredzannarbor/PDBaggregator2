@@ -1,0 +1,11 @@
+BEGIN TRANSACTION;
+CREATE TABLE `routes` (
+	`ip_id`	TEXT,
+	`route`	TEXT,
+	`allowed`	NUMERIC
+);
+CREATE TABLE `nodes` (
+	`ip`	TEXT,
+	PRIMARY KEY(ip)
+);
+COMMIT;
